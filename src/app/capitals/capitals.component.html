@@ -3,7 +3,7 @@ keyExpr="id"
     [allowColumnReordering]="true">
     <dxi-column
     dataField="microrregiao.mesorregiao.UF.nome"  caption="Estados"
-    >
+    (onExporting)="exportGrid($event)">
     </dxi-column>
 
     <dxi-column
@@ -12,6 +12,7 @@ keyExpr="id"
     caption="Municipios">
     </dxi-column>
     
+    <dxo-export [enabled]="true"></dxo-export>
 
 
 </dx-data-grid>
