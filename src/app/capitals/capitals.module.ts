@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CapitalsComponent } from './capitals.component';
 
-import { DxDataGridModule } from 'devextreme-angular';
+import { DxDataGridModule,DxButtonModule } from 'devextreme-angular';
 
 
 @NgModule({
@@ -11,7 +11,8 @@ import { DxDataGridModule } from 'devextreme-angular';
   ],
   imports: [
     CommonModule,
-    DxDataGridModule
+    DxDataGridModule,
+    DxButtonModule
   ],
    exports: [CapitalsComponent]
 })

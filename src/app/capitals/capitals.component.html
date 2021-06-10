@@ -1,18 +1,31 @@
-<dx-data-grid  [dataSource]="districts"
-keyExpr="id"
-    [allowColumnReordering]="true">
-    <dxi-column
-    dataField="microrregiao.mesorregiao.UF.nome"  caption="Estados"
-    (onExporting)="exportGrid($event)">
-    </dxi-column>
+<div class="container-fluid">
 
-    <dxi-column
-    dataField="nome"
-    sortOrder="asc"
-    caption="Municipios">
-    </dxi-column>
+    <dx-button
+    icon="exportpdf"
+    text="Exportar para pdf"
+    (onClick)="exportGridToPDF()">
+    </dx-button>
     
-    <dxo-export [enabled]="true"></dxo-export>
-
-
-</dx-data-grid>
+    <dx-data-grid  [dataSource]="districts"
+    keyExpr="id"
+        [allowColumnReordering]="true" applyFilter="onClick">
+        <dxi-column
+        dataField="microrregiao.mesorregiao.UF.nome"  caption="Estados"
+        (onExporting)="exportGridToExcel($event)">
+        </dxi-column>
+    
+        <dxi-column
+        dataField="nome"
+        sortOrder="asc"
+        caption="Municipios">
+        </dxi-column>
+        
+        <dxo-export [enabled]="true"></dxo-export>
+        
+        <dxo-search-panel [visible]="true"></dxo-search-panel>
+        <dxo-filter-row [visible]="true"></dxo-filter-row>
+    
+    
+    
+    </dx-data-grid>
+</div>
