@@ -24,11 +24,12 @@ export class HomeComponent implements OnInit {
     onValueChanged(e) {
       const id = e.value;
       if(e.element.id === "state") {
+        // Passando id do estado
         this._homeService.getCityById(id).subscribe(results=> this.citiesData = results)
       } else {
         //this._homeService.setLocale(id).subscribe(results=> console.log(results))
         const cityObj: Cities = { id:e.value, nome: e.event.target.innerText}
-        this._homeService.setCityInHistoric(cityObj).subscribe(()=>      this._homeService.getCityInHistoric().subscribe(results=> this.citiesDataHistoric = results )
+        this._homeService.setCityInHistoric(cityObj).subscribe(()=>      this._homeService.getCityInHistoric().subscribe(results=> this.citiesDataHistoric = results)
         )
       }
   }

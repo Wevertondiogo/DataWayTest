@@ -1,5 +1,5 @@
-<div class="container mt-5">
-<div class="row row-cols-md-1">
+<div class="container p-3">
+<div class="row row-cols-1">
 
     <dx-select-box
         [dataSource]="statesData"
@@ -18,7 +18,7 @@
     [searchEnabled]="true"
     searchExpr="nome"
     searchMode="startswith"
-    class="p-2 mt-md-2" 
+    class="p-2 mt-2" 
     id="city" (onValueChanged)="onValueChanged($event)">
 </dx-select-box>
 
