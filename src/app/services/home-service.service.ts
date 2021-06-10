@@ -13,12 +13,15 @@ import { HttpHeaders } from '@angular/common/http';
 })
 export class HomeServiceService {
 
-   httpOptions = {
+  /* httpOptions = {
     headers: new HttpHeaders({
       "Content-Type": "application/x-www-form-urlencoded",
     })
   };
-
+*/
+httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+}
   constructor(private _http: HttpClient) { }
 
   getStates(): Observable<States[]> {
@@ -36,4 +39,15 @@ export class HomeServiceService {
     console.log("localeId[]="+id)
     return this._http.put(url, "localeId[]="+id, this.httpOptions)
   }
+
+  setCityInHistoric(city: Cities): Observable<Cities> {
+    const url = environment.Json_Api + 'cities';
+    return this._http.post<Cities>(url, JSON.stringify(city), this.httpOptions);
+  }
+
+  getCityInHistoric(): Observable<Cities[]> {
+    const url = environment.Json_Api + 'cities';
+    return this._http.get<Cities[]>(url)
+  }
+
 }

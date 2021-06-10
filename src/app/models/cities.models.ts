@@ -1,7 +1,7 @@
 export interface Cities {
     id: number;
     nome: string;
-    microrregiao: {
+    microrregiao?: {
             id: number;
             mesorregiao: {
                 UF: {

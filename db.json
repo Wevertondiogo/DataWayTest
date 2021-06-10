@@ -1,0 +1,32 @@
+{
+  "cities": [
+    {
+      "id": 2700805,
+      "nome": "Belém"
+    },
+    {
+      "id": 3502903,
+      "nome": "Araçoiaba da Serra"
+    },
+    {
+      "id": 3302270,
+      "nome": "Japeri"
+    },
+    {
+      "id": 3502754,
+      "nome": "Araçariguama"
+    },
+    {
+      "id": 3504404,
+      "nome": "Avanhandava"
+    },
+    {
+      "id": 3507308,
+      "nome": "Boracéia"
+    },
+    {
+      "id": 3129806,
+      "nome": "Ibirité"
+    }
+  ]
+}
