@@ -2,16 +2,26 @@
 <div class="row row-cols-md-1">
 
     <dx-select-box
-        [dataSource]="data"
+        [dataSource]="statesData"
         valueExpr="id"
-        displayExpr="nome" class="p-2">
+        displayExpr="nome" 
+        [searchEnabled]="true"
+        searchExpr="nome"
+        searchMode="startswith"
+        class="p-2" (onValueChanged)="onValueChanged($event)" id="state">
     </dx-select-box>
 
-    <dx-text-box value="The text that should not be edited" class="p-2 mt-md-2 mb-md-2">
-</dx-text-box>
-<dx-button text="Procurar" class="p-2 w-25">
-    
-</dx-button>
+    <dx-select-box
+    [dataSource]="citiesData"
+    valueExpr="id"
+    displayExpr="nome"
+    [searchEnabled]="true"
+    searchExpr="nome"
+    searchMode="startswith"
+    class="p-2 mt-md-2" 
+    id="city" (onValueChanged)="onValueChanged($event)">
+</dx-select-box>
+
 </div>
 
 </div>

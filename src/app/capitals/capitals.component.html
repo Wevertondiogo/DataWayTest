@@ -1,1 +1,17 @@
-<p>capitals works!</p>
+<dx-data-grid  [dataSource]="districts"
+keyExpr="id"
+    [allowColumnReordering]="true">
+    <dxi-column
+    dataField="microrregiao.mesorregiao.UF.nome"  caption="Estados"
+    >
+    </dxi-column>
+
+    <dxi-column
+    dataField="nome"
+    sortOrder="asc"
+    caption="Municipios">
+    </dxi-column>
+    
+
+
+</dx-data-grid>

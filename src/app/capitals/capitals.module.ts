@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CapitalsComponent } from './capitals.component';
 
+import { DxDataGridModule } from 'devextreme-angular';
 
 
 @NgModule({
@@ -9,7 +10,8 @@ import { CapitalsComponent } from './capitals.component';
     CapitalsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    DxDataGridModule
   ],
    exports: [CapitalsComponent]
 })
