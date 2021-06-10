@@ -1,56 +1,5 @@
 {
   "cities": [
-    {
-      "id": 2700805,
-      "nome": "Belém"
-    },
-    {
-      "id": 3502903,
-      "nome": "Araçoiaba da Serra"
-    },
-    {
-      "id": 3302270,
-      "nome": "Japeri"
-    },
-    {
-      "id": 3502754,
-      "nome": "Araçariguama"
-    },
-    {
-      "id": 3504404,
-      "nome": "Avanhandava"
-    },
-    {
-      "id": 3507308,
-      "nome": "Boracéia"
-    },
-    {
-      "id": 3129806,
-      "nome": "Ibirité"
-    },
-    {
-      "id": 3129608,
-      "nome": "Ibiaí"
-    },
-    {
-      "id": 3131000,
-      "nome": "Inhaúma"
-    },
-    {
-      "id": 3550308,
-      "nome": "São Paulo"
-    },
-    {
-      "id": 4322541,
-      "nome": "Vale Real"
-    },
-    {
-      "id": 2802502,
-      "nome": "General Maynard"
-    },
-    {
-      "id": 4201703,
-      "nome": "Ascurra"
-    }
+  
   ]
 }
